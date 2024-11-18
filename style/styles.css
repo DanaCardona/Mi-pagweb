@@ -7,8 +7,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(177, 177, 247);
-  color: #333;
+  background-color: rgb(163, 163, 252);
+  color: #0939fc;
   line-height: 1.6;
   padding: 0;
   width: 100%;
@@ -129,14 +129,14 @@ header {
 }
 
 h1 {
-  color: #2a4dac;
+  color: #0649f0;
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
 p {
   font-size: 18px;
-  color: #333;
+  color: #0909ff;
 }
 
 .btn {
@@ -189,9 +189,8 @@ p {
   background-color: #2563eb;
 }
 
-/* Estilo para el perfil */
 .perfil-section {
-  background-color: #ffffff;
+  background-color: #0732f1;
   padding: 40px;
   margin: 30px auto;
   width: 80%;
@@ -208,7 +207,7 @@ p {
 
 .perfil-section p {
   font-size: 1rem;
-  color: #555;
+  color: #5247f0;
 }
 
 .navbar {
