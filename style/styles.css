@@ -1,179 +1,67 @@
-
-  /* responsive.css */
-
-/* Para pantallas de 480px o menos (teléfonos móviles) */
-@media (max-width: 480px) {
-    body {
-      font-size: 14px;
-    }
-  
-    header {
-      padding: 10px;
-    }
-  
-    .container {
-      padding: 10px;
-    }
-  
-    h1 {
-      font-size: 24px;
-    }
-  }
-  
-  /* Para pantallas entre 480px y 1368px (tabletas y PCs más pequeños) */
-  @media (max-width: 1368px) {
-    body {
-      font-size: 15px;
-    }
-  
-    header {
-      padding: 12px;
-    }
-  
-    .container {
-      padding: 15px;
-    }
-  
-    h1 {
-      font-size: 32px;
-    }
-  }
-  
-  /* Para pantallas mayores de 1368px (pantallas grandes de PC) */
-  @media (min-width: 1369px) {
-    .container {
-      padding: 40px;
-    }
-  
-    h1 {
-      font-size: 48px;
-    }
-  }
-  /* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  @keyframes in-circle-swoop {
-    from {
-      clip-path: var(--circle-top-right-out);
-    }
-    to {
-      clip-path: var(--circle-bottom-right-in);
-    }
-  }
-  
-  [transition-style="in:custom:circle-swoop"] {
-    --transition__duration: 5s;
-    animation-name: in-circle-swoop;
-  } 
-  /* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff; /* Color de fondo claro */
-}
-
-/* Barra de navegación */
-.navbar {
-    background-color: #1e3a8a; /* Azul oscuro */
-    padding: 10px 0;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar ul li {
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    background-color: #3b82f6; /* Azul claro en hover */
-    border-radius: 5px;
-}
-
-/* Estilos del contenido */
-.content {
-    text-align: center;
-    padding: 50px;
-    background-color: #e6f2ff; /* Fondo azul claro */
-}
-
-h1 {
-    color: #1e3a8a;
-}
-
-p {
-    font-size: 18px;
-    color: #333;
-}
-
-/* Botones */
-.btn {
-    background-color: #1e3a8a; /* Azul oscuro */
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #3b82f6; /* Azul claro en hover */
-    border-radius: 5px;
-}
-
-.btn:focus {
-    outline: none;
-}
-/* styles.css */
-
-/* General */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
 }
-
 body {
-  background-color: #f4f9fc;
+  font-family: Arial, sans-serif;
+  background-color: rgb(128, 128, 235);
   color: #333;
   line-height: 1.6;
+  padding: 0;
 }
 
-h2 {
-  color: #1e3a8a; /* Azul oscuro */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  header {
+    padding: 10px;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
 }
 
-/* Encabezado y navegación */
+@media (max-width: 1368px) {
+  body {
+    font-size: 15px;
+  }
+  
+  header {
+    padding: 12px;
+  }
+  
+  .container {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1369px) {
+  .container {
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 48px;
+  }
+}
+
 header {
   background-color: #1e3a8a;
   color: white;
   padding: 15px 0;
+  text-align: center;
 }
 
 nav ul {
@@ -193,10 +81,28 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #2563eb; /* Azul más claro */
+  background-color: #2563eb;}
+
+.btn {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
-/* Sección de perfil */
+.btn:hover {
+  background-color: #3b82f6; 
+}
+
+.btn:focus {
+  outline: none;
+}
+
 .perfil-section {
   background-color: #ffffff;
   padding: 40px;
@@ -218,7 +124,6 @@ nav a:hover {
   color: #555;
 }
 
-/* Footer */
 .footer {
   background-color: #1e3a8a;
   color: white;
@@ -248,5 +153,55 @@ nav a:hover {
 
 .social-link:hover {
   background-color: #2563eb;
+}
+.navbar {
+  background-color: #1e3a8a;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #3b82f6;
+  border-radius: 5px;
+}
+.content {
+  text-align: center;
+  padding: 50px;
+  background-color: #e6f2ff;
+}
+
+h1 {
+  color: #1e3a8a;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+h1 {
+  color: #1e3a8a;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
