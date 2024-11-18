@@ -58,7 +58,7 @@ body {
 }
 
 header {
-  background-color: #1e3a8a;
+  background-color: #7094f7;
   color: white;
   padding: 15px 0;
   text-align: center;
@@ -125,7 +125,7 @@ nav a:hover {
 }
 
 .footer {
-  background-color: #1e3a8a;
+  background-color: #345fd4;
   color: white;
   padding: 20px;
   text-align: center;
@@ -200,7 +200,7 @@ p {
 }
 
 h1 {
-  color: #1e3a8a;
+  color: #2a4dac;
   font-size: 3rem;
   margin-bottom: 20px;
 }
